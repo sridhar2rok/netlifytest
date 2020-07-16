@@ -16,7 +16,7 @@ class App extends Component {
     return (
         <ApolloProvider client={client}>
             <div id="main">
-                <h1>G+D BPS Database list</h1>
+                <h1>G+D BPS Database working</h1>
                 <AddSearch />
               {/* A JSX comment <SpecList />*/}
                 <AddSpec />
