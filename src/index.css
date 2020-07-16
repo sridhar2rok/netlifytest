@@ -1,0 +1,145 @@
+body{
+    background: #eee;
+    font-family: 'Nunito SemiBold';
+}
+
+#main h1{
+    color: #295f2d;
+    text-align: center;
+}
+
+#main{
+    padding: 0px;
+    box-sizing: border-box;
+    width: 60%;
+    height: 100%;
+}
+
+#book-list{
+    padding: 0;
+}
+
+#book-list li{
+    display: inline-block;
+    left: 0;
+    top: 0;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ffe67c;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    cursor: pointer;
+    overflow: auto;
+    color: #295f2d;
+}
+
+form{
+    background: #fff;
+    padding: 20px;
+    position: fixed;
+    left: 0%;
+    bottom: 0;
+    width: 400px;
+}
+
+form .field{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+form label{
+    text-align: right;
+    padding: 6px;
+}
+
+form input, form select{
+    margin: 4px 0;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+form button{
+    color: #fff;
+    font-size: 2em;
+    background: #ffe67c;
+    border: 0;
+    padding: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+#Specification-details{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: #ffe67c;
+    padding: 30px;
+    overflow: auto;
+    box-shadow: -2px -3px 5px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    color: #295f2d;
+}
+
+.searchBox {
+    position: absolute;
+    top: -2%;
+    left: 10%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .
+  {
+    width: 150px;
+    padding: 0 6px;
+}
+}
