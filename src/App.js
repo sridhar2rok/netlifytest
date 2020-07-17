@@ -8,7 +8,7 @@ import AddSpec from './components/AddSpec';
 import AddSearch from './components/AddSearch';
 // apollo client setup
 const client = new ApolloClient({
-    uri: 'https://gdbackend.herokuapp.com/graphql'
+    uri: 'http://localhost:4000/graphql'
 });
 
 class App extends Component {
