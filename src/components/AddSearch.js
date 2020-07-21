@@ -28,12 +28,11 @@ class AddSearch extends Component {
     submitForm(e){
         e.preventDefault()
         // use the addspecMutatio
-
         }
 
     displaySpecs(){
-      var id  = this.state.search.toLowerCase();
-      console.log(id);
+      var item  = this.state.search.toLowerCase();
+      console.log(item);
       var spec = this.props.getspecsQuery;
       console.log(spec.specs);
       if(spec.loading){
@@ -41,10 +40,9 @@ class AddSearch extends Component {
       }
       else {
             return spec.specs.map(spec => {
-                return(spec.data_element.toLowerCase().includes(id) &&
-                      <li key={ spec.id } onClick={ (e) => this.setState({ selected: spec.id }) }><b>{ spec.data_element}</b> - <small> {spec.author.machine} - {spec.author.reporttype} </small> {console.log(spec.data_element)}</li>
+                return(spec.data_element.toLowerCase().includes(item) &&
+                      <li key={ spec.item } onClick={ (e) => this.setState({ selected: spec.item }) }><b>{ spec.data_element}</b> - <small> {spec.author.machine} - {spec.author.reporttype} </small> {console.log(spec.data_element)}</li>
                   )
-
           })
         }
 
