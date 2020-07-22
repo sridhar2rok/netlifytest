@@ -41,7 +41,7 @@ class AddSearch extends Component {
       else {
             return spec.specs.map(spec => {
                 return(spec.data_element.toLowerCase().includes(item) &&
-                      <li key={ spec.item } onClick={ (e) => this.setState({ selected: spec.item }) }><b>{ spec.data_element}</b> - <small> {spec.author.machine} - {spec.author.reporttype} </small> {console.log(spec.data_element)}</li>
+                      <li key={ spec.id } onClick={ (e) => this.setState({ selected: spec.id }) }><b>{ spec.data_element}</b> - <small> {spec.author.machine} - {spec.author.reporttype} </small> {console.log(spec.data_element)}</li>
                   )
           })
         }
